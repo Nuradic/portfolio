@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Murad</title>
-    <link href="../css/style.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=inter"
-    />
-    <link href="../js/index.js" rel="script" />
-  </head>
-  <body>
-    
-    <div class="navbar">
-      <img id="menu" src="../assets/images/Menu.png" />
-      <div class="navs">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#about-me">About Me</a></li>
-          <li class="nav-item"><a href="#education">Education</a></li>
-          <li class="nav-item"><a href="#certificates">Certificates</a></li>
-          <li class="nav-item"><a href= "#techs">Tech Stacks</a></li>
-          <li class="nav-item"><a href="#projects">Projects</a></li>
-        </ul>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Murad</title>
+  <link href="../css/style.css" rel="stylesheet" />
+  <!-- <link href="../css/wheel.css" rel="stylesheet" /> -->
+  <link rel="script" href="../js/index.js">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=inter" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body >
+  <div class="root">
+    <div id="side-bar">
+      <i class="fa-solid fa-xmark fa-2xl" id="clear" onclick="navtoggle()"></i>
+      <div id="nav-header"></div>
+      <ul id="side-list">
+        <li class="nav-item"><a href=""><i class="fa-solid fa-school fa-2xl"></i></a></li>
+        <li class="nav-item"><a href=""> <i class="fa-solid fa-certificate fa-2xl"></i></i></a></li>
+        <li class="nav-item"><a href=""><i class="fa-solid fa-diagram-project fa-2xl"></i></i></a></li>
+        <li class="nav-item"><a href=""><i class="fa-solid fa-list-check fa-2xl"></i></a></li>
+      </ul>
     </div>
     <section id="about-me">
-    <div class="about-me">
-      <div class="row-1">
-        <div class="some-note">
-          <h1 class="greeting">Ashama, It is Murad</h1>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in
-            repudiandae vitae esse, beatae necessitatibus dolorem quibusdam
-            alias. Sint nostrum iste suscipit consequatur adipisci deserunt
-            facere incidunt necessitatibus dicta ducimus!
-          </p>
-          <button class="download-pt">Download Portfolio</button>
+      <div class="about-me">
+        <div class="row">
+          <div id="note">
+            <h1 class="greeting">Ashama, It is Murad</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in
+              repudiandae vitae esse, beatae necessitatibus dolorem quibusdam
+              alias. Sint nostrum iste suscipit consequatur adipisci deserunt
+              facere incidunt necessitatibus dicta ducimus!
+            </p>
+            <button id="download-pt" onclick="hello()">Download Portfolio</button>
+          </div>
+          <div class="img-container">
+          </div>
         </div>
-        <div class="img-container">
-          <!-- <img src="../assets/images/Ellipse 1.png" /> -->
-        </div>
-      </div>
-      <div class="row-2">
-        <ul class="socials-list">
-          <li class="social-item">
-            <a href="https://instagram.com/murd_hus/" target="_blank">
-              <img src="../assets/images/instagram.png" />
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://github.com/Nuradic/" target="_blank">
+        <div class="row">
+          <ul id="socials">
+            <li >
+              <a href="https://instagram.com/murd_hus/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Nuradic/" target="_blank" rel="noopener">
 
-              <img src="../assets/images/github.png" /></li>
+                <i class="fa-brands fa-github fa-2xl"></i>
+            </li>
             </a>
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/murad-usman-4a6464223/" target="_blank">
-              <img src="../assets/images/linkedin.png" />
-            </a>
-          </li>
-        </ul>
+            <li>
+              <a href="https://www.linkedin.com/in/murad-usman-4a6464223/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="educations"></section>
-  <section class="certificates"></section>
-  <section class="projects"></section>
-  <section class="techs"></section>
-  </body>
+    </section>
+    <!-- <section class="educations"></section>
+    <section class="certificates"></section>
+    <section class="projects"></section> -->
+    <section class="techs">
+     
+    </section>
+    <!-- <script src="../js/index.js"></script> -->
+  </div>
+</body>
+
 </html>
