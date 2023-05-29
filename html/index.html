@@ -1,79 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Murad</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/project.css" rel="stylesheet" />
+    <link href="../css/wheel.css" rel="stylesheet" />
+    <script src="../js/index.js"></script>
+    <script defer src="../js/pie.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=inter"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Murad</title>
-  <link href="../css/style.css" rel="stylesheet" />
-  <!-- <link href="../css/wheel.css" rel="stylesheet" /> -->
-  <link rel="script" href="../js/index.js">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=inter" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-
-<body >
-  <div class="root">
-    <div id="side-bar">
-      <i class="fa-solid fa-xmark fa-2xl" id="clear" onclick="navtoggle()"></i>
-      <div id="nav-header"></div>
-      <ul id="side-list">
-        <li class="nav-item"><a href=""><i class="fa-solid fa-school fa-2xl"></i></a></li>
-        <li class="nav-item"><a href=""> <i class="fa-solid fa-certificate fa-2xl"></i></i></a></li>
-        <li class="nav-item"><a href=""><i class="fa-solid fa-diagram-project fa-2xl"></i></i></a></li>
-        <li class="nav-item"><a href=""><i class="fa-solid fa-list-check fa-2xl"></i></a></li>
-      </ul>
-    </div>
-    <section id="about-me">
-      <div class="about-me">
-        <div class="row">
-          <div id="note">
-            <h1 class="greeting">Ashama, It is Murad</h1>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in
-              repudiandae vitae esse, beatae necessitatibus dolorem quibusdam
-              alias. Sint nostrum iste suscipit consequatur adipisci deserunt
-              facere incidunt necessitatibus dicta ducimus!
-            </p>
-            <button id="download-pt" onclick="hello()">Download Portfolio</button>
-          </div>
-          <div class="img-container">
-          </div>
-        </div>
-        <div class="row">
-          <ul id="socials">
-            <li >
-              <a href="https://instagram.com/murd_hus/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-instagram fa-2xl"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Nuradic/" target="_blank" rel="noopener">
-
-                <i class="fa-brands fa-github fa-2xl"></i>
-            </li>
+  <body>
+    <div class="root">
+      <div id="side-bar">
+        <ul id="side-list">
+          <li class="nav-item">
+            <a href="#about-me" class="">
+              <div class="profile">
+                <img src="../assets/images/murad.jpg" alt="" />
+              </div>
             </a>
-            <li>
-              <a href="https://www.linkedin.com/in/murad-usman-4a6464223/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-linkedin fa-2xl"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a href="#educations" class=""
+              ><img src="../assets/icons/edu.svg" alt="" srcset=""
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class=""
+              ><img src="../assets/icons/cubes.svg" alt="" srcset=""
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#techs" class=""
+              ><img src="../assets/icons/table-list.svg" alt="" srcset=""
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a href="#cert" class=""
+              ><img src="../assets/icons/trophy.svg" alt="" srcset=""
+            /></a>
+          </li>
+        </ul>
       </div>
-    </section>
-    <!-- <section class="educations"></section>
-    <section class="certificates"></section>
-    <section class="projects"></section> -->
-    <section class="techs">
-     
-    </section>
-    <!-- <script src="../js/index.js"></script> -->
-  </div>
-</body>
+      <section id="about-me">
+        <div class="about-me">
+          <div class="row">
+            <div id="note">
+              <h1 class="greeting">Ashama, It is Murad</h1>
+              <br />
+              <p>
+                I am a mobile and web developer. I have a passion for creating
+                innovative and user-friendly applications that solve real-world
+                problems. With 3 years of experience, I have developed a strong
+                skillset in various programming languages and frameworks. I am a
+                highly motivated individual who is always eager to learn and
+                keep up with the latest trends and technologies.
+              </p>
+              <button id="download-pt" onclick="pdfprint()">
+                Download Portfolio
+              </button>
+            </div>
+            <div class="img-container"></div>
+          </div>
+          <div class="row">
+            <ul id="socials">
+              <li>
+                <a
+                  href="https://instagram.com/murd_hus/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Nuradic/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/murad-usman-4a6464223/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="educations projects" id="educations">
+        <div class="section-header">Educations</div>
+        <div class="holder">
+          <div class="card">
+            <h6 class="card-small-title">2016-2020</h6>
+            <h1 class="card-title">Natural Science Diploma</h1>
+            <h3 class="card-subtitle">Chercher Secondery School</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
+              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
+              laudantium totam officiis porro accusamus reiciendis, ab sit eos
+              architecto at.
+            </p>
+          </div>
+          <div class="card">
+            <h6 class="card-small-title">2020-present</h6>
+            <h1 class="card-title">BE in Software Engineering</h1>
+            <h3 class="card-subtitle">
+              Adama Science and Technology University
+            </h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
+              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
+              laudantium totam officiis porro accusamus reiciendis, ab sit eos
+              architecto at.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="section-header">Projects</div>
+        <div class="holder">
+          <div class="card">
+            <h6 class="card-small-title">date here</h6>
+            <h1 class="card-title">Some title</h1>
+            <h3 class="card-subtitle">Some subtitle</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
+              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
+              laudantium totam officiis porro accusamus reiciendis, ab sit eos
+              architecto at.
+            </p>
+          </div>
+          <div class="card">
+            <h6 class="card-small-title">date here</h6>
+            <h1 class="card-title">Some title</h1>
+            <h3 class="card-subtitle">Some subtitle</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
+              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
+              laudantium totam officiis porro accusamus reiciendis, ab sit eos
+              architecto at.
+            </p>
+          </div>
+          <div class="card">
+            <h6 class="card-small-title">date here</h6>
+            <h1 class="card-title">Some title</h1>
+            <h3 class="card-subtitle">Some subtitle</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
+              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
+              laudantium totam officiis porro accusamus reiciendis, ab sit eos
+              architecto at.
+            </p>
+          </div>
+          <div class="card">
+            <h6 class="card-small-title">date here</h6>
+            <h1 class="card-title">Some title</h1>
+            <h3 class="card-subtitle">Some subtitle</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
+              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
+              laudantium totam officiis porro accusamus reiciendis, ab sit eos
+              architecto at.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="techs" id="techs">
+        <div class="section-header">Tech Stacks</div>
+        <div class="container">
+          <div class="wheel" id="wheel">
+            <div class="pie-item one selected" value="2" name="django">
+              <h2>Django</h2>
+            </div>
+            <div class="pie-item two" value="1" name="react">
+              <h2>ReactJs</h2>
+            </div>
+            <div class="pie-item three" value="0" name="flutter">
+              <h2>Flutter</h2>
+            </div>
+            <div class="pie-item four" value="5" name="laravel">
+              <h2>Laravel</h2>
+            </div>
+            <div class="pie-item five" value="3" name="spring">
+              <h2>Spring</h2>
+            </div>
+            <div class="pie-item six" value="4" name="psql">
+              <h2>PostgresSQl</h2>
+            </div>
+            <div class="pie-item seven" value="7" name="mysql">
+              <h2>MySql</h2>
+            </div>
+            <div class="pie-item eight" value="6" name="android">
+              <h2>Android</h2>
+            </div>
+            <div class="spinner" id="spinner"></div>
+          </div>
+          <div class="container-cut">
+            <h1 class="title" id="title-1">Flutter</h1>
 
+            <h3 class="subtitle"></h3>
+            <ul class="list" id="container-list-1">
+              <li class="list-item">UI/UX</li>
+              <li class="list-item">GetX State Management</li>
+              <li class="list-item">
+                Sqflite, IsarDb,and hive expert on mobile database
+              </li>
+            </ul>
+
+            <p class="description" id="description-1">
+              I am proficient in the Flutter SDK and have hands-on experience in
+              developing mobile applications using Flutter. I have a strong
+              understanding of Dart programming language and its core concepts.
+              I have experience developing mobile applications for both iOS and
+              Android platforms.I have knowledge of various mobile app
+              architecture patterns like MVC, MVVM, and MVP. I am familiar with
+              RESTful APIs and how to integrate them into mobile applications. I
+              have experience working with database systems like SQLite,
+              Firebase, and MySQL.I am proficient in using version control
+              systems like Git to manage the source code of applications. I have
+              experience working in an agile development environment and
+              following agile principles like Scrum or Kanban.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="certificates projects" id="cert">
+        <div class="section-header">Certificates</div>
+        <div class="holder">
+          <div class="card">
+            <h6 class="card-small-title">date here</h6>
+            <h1 class="card-title">Some title</h1>
+            <h3 class="card-subtitle">Some subtitle</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
+              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
+              laudantium totam officiis porro accusamus reiciendis, ab sit eos
+              architecto at.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>

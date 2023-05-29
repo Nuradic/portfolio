@@ -6,4 +6,9 @@ function navtoggle(){
     }else{
         nav.style.display="none"
     }
+
+}
+function pdfprint()
+{
+    document.write()
 }

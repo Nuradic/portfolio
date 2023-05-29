@@ -1,16 +1,3 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-body{
-    background-image: linear-gradient(45deg, rgb(13, 17, 23, 0.8), rgb(13, 17, 23, 0.84), rgb(13, 17, 20, 0.9), rgb(13, 17, 23, 0.8), rgb(13, 17, 23, 100));
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    height: 100vh;
-
-}
 
 .wheel{
     background: grey;
@@ -41,7 +28,6 @@ body{
 	font-family:sans-serif;
 	color:#fff;
 	left:110px;
-    /* border: 5px black solid; */
 
 }
 
@@ -60,8 +46,6 @@ body{
     width: 150px;
     border-radius: 50%;
     background: rgb(30, 30, 30, 1);
-    /* margin-top: 50%;
-    margin-left: 50%; */
     left:115px;
     top:115px;
 }
@@ -76,8 +60,9 @@ body{
     color:white;
 }
 .container .description{
-    font-size: 20px;
+    font-size: 16px;
     margin:20px 10px 10px 260px ;
+    line-height: 23px;
     color:white;
 }
 .container .list{
@@ -87,7 +72,6 @@ body{
 .wheel .one{
     background-color: grey;
     left:50%;   
-
 }
 .wheel .two{
     background-color: grey;
@@ -133,11 +117,18 @@ body{
     background: #000;
     cursor: pointer;
 }
+.techs .section-header{
+    margin-left: 150px;
+}
+.title *{
+    transition: 3s;
+}
 
 .container{
     display: flex;
     position: relative;
-    margin-left: 70px;
+    margin-left: 150px;
+    margin-top: 25px;
     align-items: center;
     z-index: 2;
 }
@@ -148,5 +139,4 @@ body{
     height: 450px;
     position: absolute;
     margin-left: 200px;
-
 }

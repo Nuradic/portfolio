@@ -1,0 +1,15 @@
+{
+    "django": [
+        "Django + templating for full stack web development",
+        "Django + DRf for API development",
+        "Django + channels for real time data (Websocket Development)",
+        "Django ORM expert for managing database"
+    ],
+    "flutter": [
+        "GetX State management",
+        "Sqflite, IsarDb,and hive expert on mobile database",
+        "UI/UX ",
+        ""
+    ],
+    "Laravel": []
+}
