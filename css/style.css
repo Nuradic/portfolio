@@ -6,7 +6,16 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+/* #coreimg{
+    scale: 0.4; 
+    width: 500;
+    height:700;
+    display: inline-block;
+    background-color: #FF7262;
+    position: absolute;
+    left: 0px;
+    top:0px;
+} */
 body {
     background-image: linear-gradient(45deg, rgb(13, 17, 23, 0.8), rgb(13, 17, 23, 0.84), rgb(13, 17, 20, 0.9), rgb(13, 17, 23, 0.8), rgb(13, 17, 23, 100));
     background-repeat: no-repeat;
@@ -61,19 +70,28 @@ section{
 .nav-item i{
     margin-right:10px ;
 }
-.nav-item img{
+.nav-item svg{
     transition: 1s;
-    width: 48px;
-    
+    padding: 10px;
+    border-radius: 20px;
+}
+/* .nav-item svg:hover{
+    scale: 1.2;
+    background: #FF7262;
+    filter: hue-rotate(360deg);
+} */
+.nav-item img{
+    transition: 2s;
 }
 .nav-item img:hover{
-    color: white;
     scale: 1.2;
+    background: #FF7262;
     filter: hue-rotate(180deg);
 }
 .nav-item a{
     text-decoration: none;
     color: white;
+    
 }
 #clear{
     margin-top: 20px;
@@ -131,12 +149,25 @@ section{
     height: 60vh;
 }
 
-.img-container{
-    background-color: yellow;
+.about-me #coreimg,.coreimg{
     border-radius: 20px;
-    width: 30rem;
-    height:60vh;
-    padding: 15px;
+    width: 24rem;
+    padding-bottom: 20px;
+    border-radius: 50%;
+    height:64vh;
+    box-shadow: 10px 10px 30px #000;
+    transition: 1s;
+}
+.about-me .coreimg:hover{
+    background-color: rgb(217, 217, 217, 0.25);
+    border-radius: 50%;
+    width: 28rem;
+    height:28;
+    cursor: pointer;
+}
+#coreimg:hover{
+    scale: 1.2;
+
 }
 
 .about-me p{

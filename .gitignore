@@ -1,2 +1,5 @@
 temp/
 *.py
+.hintrc
+.vscode/
+ctemp/

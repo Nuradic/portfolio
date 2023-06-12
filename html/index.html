@@ -10,6 +10,7 @@
     <link href="../css/wheel.css" rel="stylesheet" />
     <script src="../js/index.js"></script>
     <script defer src="../js/pie.js"></script>
+    <script defer src="../js/index.js"></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=inter"
@@ -25,7 +26,7 @@
   </head>
 
   <body>
-    <div class="root">
+    <div class="root" id="root">
       <div id="side-bar">
         <ul id="side-list">
           <li class="nav-item">
@@ -36,24 +37,92 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#educations" class=""
-              ><img src="../assets/icons/edu.svg" alt="" srcset=""
-            /></a>
+            <div>
+              <a href="#educations" class="">
+                <svg
+                  class="nav-icon"
+                  value="1"
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.99078 8.72266L5.6875 8.88672V15.2852C4.92188 15.7391 4.375 16.5484 4.375 17.5C4.375 18.416 4.88086 19.1822 5.59125 19.6602L3.88281 26.4688C3.69141 27.2234 4.11578 28 4.71734 28H9.28375C9.88531 28 10.3091 27.2207 10.1177 26.5672L8.40875 19.6656C9.11969 19.1844 9.625 18.4188 9.625 17.5C9.625 16.543 9.07812 15.7369 8.3125 15.2852V9.52984L14 10.897L14.0001 17.5C14.0001 25.2383 20.2618 31.5 28.0001 31.5C35.7384 31.5 41.9017 25.2383 41.9017 17.5L42 10.8959L50.9961 8.72266C52.9922 8.24414 52.9922 5.76953 50.9961 5.27734L30.1711 0.246094C28.7492 -0.0820312 27.2595 -0.0820312 25.8366 0.246094L4.98969 5.27734C3.00781 5.75641 3.00781 8.24469 4.99078 8.72266ZM39.2875 34.2125L28 45.5L16.7125 34.2125C9.06391 36.6516 3.5 43.75 3.5 52.2047C3.5 54.3047 5.19859 56 7.29203 56H48.7123C50.8047 56 52.5 54.3047 52.5 52.2047C52.5 43.75 46.9328 36.6516 39.2875 34.2125Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
           </li>
           <li class="nav-item">
-            <a href="#projects" class=""
-              ><img src="../assets/icons/cubes.svg" alt="" srcset=""
-            /></a>
+            <a href="#projects" class="" id="">
+              <svg
+                class="nav-icon"
+                value="2"
+                width="56"
+                height="56"
+                viewBox="0 0 56 56"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_227_65)">
+                  <path
+                    d="M18.8234 4.3925L29.3234 0.411251C30.7234 -0.119109 32.2766 -0.119109 33.6766 0.411251L44.1766 4.3925C46.55 5.29485 48.125 7.57423 48.125 10.1194V22.3891C48.2672 22.4328 48.4094 22.4766 48.5516 22.4328L59.0516 26.5125C61.425 27.4094 63 29.6953 63 32.2328V45.2704C63 47.6985 61.5672 49.8969 59.3359 50.8704L48.8359 55.486C47.2719 56.186 45.4781 56.186 43.9141 55.486L31.5 50.0391L19.0859 55.486C17.5219 56.186 15.7281 56.186 14.1641 55.486L3.65969 50.8704C1.43609 49.8969 0 47.6985 0 45.2704V32.2328C0 29.6953 1.57391 27.4094 3.95391 26.5125L14.4484 22.4328C14.5906 22.4766 14.7328 22.4328 14.875 22.3891V10.1194C14.875 7.57423 16.45 5.29485 18.8234 4.3925ZM31.8062 5.32001C31.6094 5.24454 31.2922 5.24454 31.1938 5.32001L22.6187 8.56954L31.4016 11.9766L40.3813 8.56954L31.8062 5.32001ZM42.875 23.0344V13.2344L33.8625 16.6906V26.4469L42.875 23.0344ZM16.9312 27.4422C16.7344 27.3657 16.4172 27.3657 16.3188 27.4422L7.74484 30.6907L16.625 34.0922L25.5063 30.6907L16.9312 27.4422ZM18.9875 49.7985L28 45.8391V35.35L18.9875 38.8063V49.7985ZM37.4937 30.6907L46.375 34.0922L55.2563 30.6907L46.6812 27.4422C46.4844 27.3657 46.1672 27.3657 46.0688 27.4422L37.4937 30.6907ZM57.75 45.2704V35.35L48.7375 38.8063V49.7985L57.225 46.0688C57.5422 45.9266 57.75 45.6203 57.75 45.2704Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_227_65">
+                    <rect width="63" height="56" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
           </li>
           <li class="nav-item">
-            <a href="#techs" class=""
-              ><img src="../assets/icons/table-list.svg" alt="" srcset=""
-            /></a>
+            <a href="#techs" class="">
+              <svg
+                value="3"
+                class="nav-icon"
+                width="56"
+                height="56"
+                viewBox="0 0 56 56"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 10.5C0 6.63359 3.13359 3.5 7 3.5H49C52.8609 3.5 56 6.63359 56 10.5V45.5C56 49.3609 52.8609 52.5 49 52.5H7C3.13359 52.5 0 49.3609 0 45.5V10.5ZM7 17.5H14V10.5H7V17.5ZM49 10.5H21V17.5H49V10.5ZM7 31.5H14V24.5H7V31.5ZM49 24.5H21V31.5H49V24.5ZM7 45.5H14V38.5H7V45.5ZM49 38.5H21V45.5H49V38.5Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
           </li>
           <li class="nav-item">
-            <a href="#cert" class=""
-              ><img src="../assets/icons/trophy.svg" alt="" srcset=""
-            /></a>
+            <a href="#cert" class="">
+              <svg
+                value="4"
+                class="nav-icon"
+                width="63"
+                height="56"
+                viewBox="0 0 63 56"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_227_69)">
+                  <path
+                    d="M62.5734 9.01031C62.289 7.83016 61.2281 7 60.014 7H48.989C49.0155 5.63828 49.0008 4.40781 48.9719 3.38844C48.9234 1.49078 47.3812 0 45.478 0H17.5218C15.6186 0 14.0765 1.49078 14.0218 3.38844C13.9015 4.40781 13.978 5.63828 14.0108 7H2.98144C1.76738 7 0.714862 7.83016 0.427753 9.01031C0.33894 9.38219 -1.71841 18.2875 4.05441 26.8953C8.14942 33.0006 15.0575 37.2892 24.5622 39.7359C26.6076 40.2615 27.9977 42.1488 27.9977 44.2608C27.9999 46.8672 25.8671 49 23.253 49H22.7499C19.8504 49 17.501 51.3505 17.501 54.25C17.501 55.2164 18.2844 56 19.1526 56H43.5541C44.5206 56 45.2057 55.2164 45.2057 54.25C45.2057 51.3505 42.8563 49 39.9568 49H39.4488C36.8392 49 34.7063 46.8672 34.7063 44.2586C34.7063 42.1466 36.0965 40.2587 38.1418 39.7337C47.6531 37.2903 54.559 33.0017 58.6496 26.8931C64.7171 18.2875 62.6609 9.38219 62.5734 9.01031ZM8.4666 24.0406C5.41066 19.5344 5.1416 14.8422 5.29144 12.25H14.0841C14.6703 18.7709 16.3099 26.5891 20.3918 32.9328C15.028 30.8 11.0358 27.825 8.4666 24.0406ZM54.5343 24.0406C51.9705 27.825 47.9784 30.7945 42.6124 32.9241C46.6921 26.5891 48.3327 18.7687 48.9124 12.25H57.7051C57.7609 14.8422 57.5859 19.5453 54.5343 24.0406Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_227_69">
+                    <rect width="63" height="56" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -75,7 +144,14 @@
                 Download Portfolio
               </button>
             </div>
-            <div class="img-container"></div>
+            <div class="coreimg">
+              <img
+                id="coreimg"
+                src="../assets/images/mrd-portfolio.jpg"
+                alt=""
+              />
+              <div></div>
+            </div>
           </div>
           <div class="row">
             <ul id="socials">
@@ -118,10 +194,10 @@
             <h1 class="card-title">Natural Science Diploma</h1>
             <h3 class="card-subtitle">Chercher Secondery School</h3>
             <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
-              laudantium totam officiis porro accusamus reiciendis, ab sit eos
-              architecto at.
+              Attended high school in Chercher Secondery School, During my stays
+              i have been one of the students who were accademically gifted. I
+              have engaged in different voluntary and club activities. I
+              graduated with great honor achieving good grades.
             </p>
           </div>
           <div class="card">
@@ -131,10 +207,8 @@
               Adama Science and Technology University
             </h3>
             <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
-              laudantium totam officiis porro accusamus reiciendis, ab sit eos
-              architecto at.
+              Currently i am a Softwre Engineering students at ASTU. Working on
+              my development skills in csec-astu.
             </p>
           </div>
         </div>
@@ -143,25 +217,25 @@
         <div class="section-header">Projects</div>
         <div class="holder">
           <div class="card">
-            <h6 class="card-small-title">date here</h6>
-            <h1 class="card-title">Some title</h1>
-            <h3 class="card-subtitle">Some subtitle</h3>
+            <h6 class="card-small-title">02-02-21-present</h6>
+            <h1 class="card-title">TemariCo</h1>
+            <h3 class="card-subtitle">Resource Platform For Students</h3>
             <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
-              laudantium totam officiis porro accusamus reiciendis, ab sit eos
-              architecto at.
+              TemariCo provides various resources to Students to help them
+              through their accademic journey. The platform is mainly accessible
+              through mobile app that is developed by flutter and uses
+              django(python) based backend.
             </p>
           </div>
           <div class="card">
-            <h6 class="card-small-title">date here</h6>
-            <h1 class="card-title">Some title</h1>
-            <h3 class="card-subtitle">Some subtitle</h3>
+            <h6 class="card-small-title">02-04-21</h6>
+            <h1 class="card-title">Grammar Practice App</h1>
+            <h3 class="card-subtitle">Flutter Based Project</h3>
             <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
-              laudantium totam officiis porro accusamus reiciendis, ab sit eos
-              architecto at.
+              English grammar app conatins over 500 grammar questions with
+              answers. developed within 7 days as a personal challenge. The
+              project enconpasses variaty of topics ranging from Good UI/UX to
+              working with json datas over api.
             </p>
           </div>
           <div class="card">
@@ -201,8 +275,8 @@
             <div class="pie-item three" value="0" name="flutter">
               <h2>Flutter</h2>
             </div>
-            <div class="pie-item four" value="5" name="laravel">
-              <h2>Laravel</h2>
+            <div class="pie-item four" value="5" name="docker">
+              <h2>Docker</h2>
             </div>
             <div class="pie-item five" value="3" name="spring">
               <h2>Spring</h2>
@@ -210,8 +284,8 @@
             <div class="pie-item six" value="4" name="psql">
               <h2>PostgresSQl</h2>
             </div>
-            <div class="pie-item seven" value="7" name="mysql">
-              <h2>MySql</h2>
+            <div class="pie-item seven" value="7" name="figma">
+              <h2>Figma</h2>
             </div>
             <div class="pie-item eight" value="6" name="android">
               <h2>Android</h2>
@@ -251,14 +325,29 @@
         <div class="section-header">Certificates</div>
         <div class="holder">
           <div class="card">
-            <h6 class="card-small-title">date here</h6>
-            <h1 class="card-title">Some title</h1>
+            <h6 class="card-small-title">2022</h6>
+            <h1 class="card-title">Solo Learn Javascript</h1>
             <h3 class="card-subtitle">Some subtitle</h3>
             <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-              libero. Sunt ex maxime explicabo aliquam molestias iste dolor? Ex
-              laudantium totam officiis porro accusamus reiciendis, ab sit eos
-              architecto at.
+              Took a solo learn program for Javascript and ECS6 and finished it
+              within only 4 days.
+            </p>
+          </div>
+          <div class="card">
+            <h6 class="card-small-title">2023</h6>
+            <h1 class="card-title">Cisco</h1>
+            <h3 class="card-subtitle">Cisco Skill For all</h3>
+            <p class="card-description">
+              Certified in networking courses given by Cisco Skill for all
+            </p>
+          </div>
+          <div class="card">
+            <h6 class="card-small-title">2023</h6>
+            <h1 class="card-title">Coursera SQL</h1>
+            <h3 class="card-subtitle">Sql course given on Courser</h3>
+            <p class="card-description">
+              finished and certified with intermediate concepts of SQL. From
+              Coursera.
             </p>
           </div>
         </div>
