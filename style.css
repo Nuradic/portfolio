@@ -430,3 +430,6 @@ footer {
 footer p {
   text-align: center;
 }
+.profile_pic{
+  border-radius: 50%;
+}
